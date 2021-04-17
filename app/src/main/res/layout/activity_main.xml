@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/Imv_excersize"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/exercise" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WE HEALTH"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_marginTop="15sp"
+        android:drawableEnd="@drawable/ic_baseline_person_24"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:textColor="@color/black"
+        android:hint="someone@gmail.com"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:background="@drawable/edt_backgrd"/>
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:drawableEnd="@drawable/lock_icon"
+        android:layout_marginTop="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="30sp"
+        android:paddingRight="26dp"
+        android:textColor="@color/black"
+        android:hint="******************"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:background="@drawable/edt_backgrd"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="18dp"
+        android:text="Remember Me"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_backgrd"
+        android:text="@string/login"
+        android:onClick="Login"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
